@@ -1,0 +1,84 @@
+/* 
+.swapoption {
+  width: 94%;
+}
+.swapbutton {
+  background-color: #1b1b1b;
+  color: #9b9797;
+  padding: 10px 12px;
+  border-radius: 10px;
+  outline: none;
+  border: transparent;
+}
+.currency input {
+  width: 50%;
+  font-size: 28px;
+  color: white;
+  background-color: #1b1b1b;
+  border: transparent;
+  outline: none;
+  background-color: none;
+}
+.swapbutton:hover {
+  color: white;
+}
+.swapoption img {
+  height: 24px;
+  width: 24px;
+}
+.ethbutton {
+  background-color: #1b1b1b;
+  color: #9b9797;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #9b9797;
+}
+.pqrs {
+  background-color: #1b1b1b;
+  width: 100%;
+  margin: auto;
+  border-radius: 20px;
+  padding: 5px;
+}
+.pqrs p {
+  color: #b5b5b5;
+}
+.btnr {
+  border-radius: 20px !important;
+  color: #fc72cc;
+  background-color: rgba(56, 122, 223, 0.5);
+}
+.arrow-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.swap {
+  background-color: #1b1b1b;
+  outline: none;
+  border: transparent;
+  border: 3px solid black;
+  border-radius: 14px;
+}
+#swapbottom {
+  margin-top: -34px;
+}
+.connectWallet {
+  border-radius: 10px;
+  background-image: linear-gradient(to right, rgba(254, 241, 187, 1) ,rgba(185, 168, 96, 1), rgba(225, 208, 136, 1), rgba(201, 182, 103, 1), rgba(254, 241, 187, 1));
+  font-size: 30px;
+  border: transparent;
+  outline: none;
+}
+.connectWallet a {
+  text-decoration: none;
+  padding: 5px 20;
+}
+.glassmorphism {
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+} */

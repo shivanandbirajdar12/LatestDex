@@ -1,0 +1,28 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.liquidity-parent{
+    padding: 10px 15px;
+    width: 289px;
+    color:#9b9797 ;
+    background-image: linear-gradient(rgba(217, 217, 217, 0.25),rgba(217, 217, 217, 0.25),rgba(15, 39, 51, 0.7));
+    border-radius:10px;
+}
+.liquiditytext{
+    font-size: 14px;
+}
+.fs{
+    font-size: 24px;
+    color: rgba(241, 241, 241, 1);
+}
+.days{
+  background-color: #0f2733;
+  padding: 5px 8px;
+  font-size: 14px;
+  border-radius: 99px;
+}
+ .p{
+    padding: 0 !important;
+} */

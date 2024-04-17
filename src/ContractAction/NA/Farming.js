@@ -1,0 +1,430 @@
+export const abiEVCFarming = [{
+  "inputs": [{
+      "internalType": "address",
+      "name": "_cakeToken",
+      "type": "address"
+  }, {
+      "internalType": "address",
+      "name": "_evcAddress",
+      "type": "address"
+  }],
+  "stateMutability": "nonpayable",
+  "type": "constructor"
+}, {
+  "anonymous": false,
+  "inputs": [{
+      "indexed": true,
+      "internalType": "address",
+      "name": "user",
+      "type": "address"
+  }, {
+      "indexed": false,
+      "internalType": "uint256",
+      "name": "amount",
+      "type": "uint256"
+  }],
+  "name": "CakeRewardClaimed",
+  "type": "event"
+}, {
+  "anonymous": false,
+  "inputs": [{
+      "indexed": true,
+      "internalType": "address",
+      "name": "account",
+      "type": "address"
+  }, {
+      "indexed": false,
+      "internalType": "uint256",
+      "name": "amount",
+      "type": "uint256"
+  }],
+  "name": "CakeStaked",
+  "type": "event"
+}, {
+  "anonymous": false,
+  "inputs": [{
+      "indexed": true,
+      "internalType": "address",
+      "name": "account",
+      "type": "address"
+  }, {
+      "indexed": false,
+      "internalType": "uint256",
+      "name": "cakeAmount",
+      "type": "uint256"
+  }, {
+      "indexed": false,
+      "internalType": "uint256",
+      "name": "EVCRewardAmount",
+      "type": "uint256"
+  }],
+  "name": "CakeUnstaked",
+  "type": "event"
+}, {
+  "anonymous": false,
+  "inputs": [{
+      "indexed": true,
+      "internalType": "address",
+      "name": "previousOwner",
+      "type": "address"
+  }, {
+      "indexed": true,
+      "internalType": "address",
+      "name": "newOwner",
+      "type": "address"
+  }],
+  "name": "OwnershipTransferred",
+  "type": "event"
+}, {
+  "inputs": [],
+  "name": "EVCToken",
+  "outputs": [{
+      "internalType": "contract IERC20",
+      "name": "",
+      "type": "address"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+  }],
+  "name": "cakePlan",
+  "outputs": [{
+      "internalType": "uint256",
+      "name": "planid",
+      "type": "uint256"
+  }, {
+      "internalType": "uint256",
+      "name": "rewardBal",
+      "type": "uint256"
+  }, {
+      "internalType": "uint256",
+      "name": "maxAprPer",
+      "type": "uint256"
+  }, {
+      "internalType": "uint256",
+      "name": "currCount",
+      "type": "uint256"
+  }, {
+      "internalType": "uint256",
+      "name": "perCakePrice",
+      "type": "uint256"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [],
+  "name": "cakePlanCount",
+  "outputs": [{
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [],
+  "name": "cakeToken",
+  "outputs": [{
+      "internalType": "address",
+      "name": "",
+      "type": "address"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [],
+  "name": "claimCakeReward",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "uint256",
+      "name": "_id",
+      "type": "uint256"
+  }],
+  "name": "claimCakeRewardById",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "uint256",
+      "name": "planId",
+      "type": "uint256"
+  }],
+  "name": "getCakeApr",
+  "outputs": [{
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "address",
+      "name": "_user",
+      "type": "address"
+  }],
+  "name": "getCakeStakedReward",
+  "outputs": [{
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "address",
+      "name": "_user",
+      "type": "address"
+  }, {
+      "internalType": "uint256",
+      "name": "_id",
+      "type": "uint256"
+  }],
+  "name": "getCakeStakedRewardById",
+  "outputs": [{
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "address",
+      "name": "_user",
+      "type": "address"
+  }],
+  "name": "getStakedIds",
+  "outputs": [{
+      "internalType": "uint256[]",
+      "name": "",
+      "type": "uint256[]"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [],
+  "name": "lockTime",
+  "outputs": [{
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [],
+  "name": "owner",
+  "outputs": [{
+      "internalType": "address",
+      "name": "",
+      "type": "address"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [],
+  "name": "renounceOwnership",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "address",
+      "name": "",
+      "type": "address"
+  }, {
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+  }, {
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+  }],
+  "name": "rewardDetails",
+  "outputs": [{
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "uint256",
+      "name": "_id",
+      "type": "uint256"
+  }, {
+      "internalType": "uint256",
+      "name": "_rewardBal",
+      "type": "uint256"
+  }, {
+      "internalType": "uint256",
+      "name": "_maxAprPer",
+      "type": "uint256"
+  }, {
+      "internalType": "uint256",
+      "name": "_perCakePrice",
+      "type": "uint256"
+  }],
+  "name": "setCakeStakePlan",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "address",
+      "name": "_cakeToken",
+      "type": "address"
+  }],
+  "name": "setCakeToken",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "address",
+      "name": "_EVCToken",
+      "type": "address"
+  }],
+  "name": "setEVCToken",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "uint256",
+      "name": "_seconds",
+      "type": "uint256"
+  }],
+  "name": "setLockTime",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "inputs": [],
+  "name": "stakeCake",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "address",
+      "name": "",
+      "type": "address"
+  }],
+  "name": "stakeCount",
+  "outputs": [{
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [],
+  "name": "totalFarmed",
+  "outputs": [{
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "address",
+      "name": "newOwner",
+      "type": "address"
+  }],
+  "name": "transferOwnership",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "uint256",
+      "name": "_id",
+      "type": "uint256"
+  }],
+  "name": "unstakeCake",
+  "outputs": [],
+  "stateMutability": "nonpayable",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "address",
+      "name": "",
+      "type": "address"
+  }],
+  "name": "userCakeBalance",
+  "outputs": [{
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "address",
+      "name": "",
+      "type": "address"
+  }],
+  "name": "userCakeClaimed",
+  "outputs": [{
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}, {
+  "inputs": [{
+      "internalType": "address",
+      "name": "",
+      "type": "address"
+  }, {
+      "internalType": "uint256",
+      "name": "",
+      "type": "uint256"
+  }],
+  "name": "userCakeStakedInfo",
+  "outputs": [{
+      "internalType": "uint256",
+      "name": "id",
+      "type": "uint256"
+  }, {
+      "internalType": "uint256",
+      "name": "amountDeposited",
+      "type": "uint256"
+  }, {
+      "internalType": "uint256",
+      "name": "stakedAt",
+      "type": "uint256"
+  }, {
+      "internalType": "uint256",
+      "name": "claimedAt",
+      "type": "uint256"
+  }, {
+      "internalType": "uint256",
+      "name": "planid",
+      "type": "uint256"
+  }, {
+      "internalType": "uint256",
+      "name": "indexofid",
+      "type": "uint256"
+  }],
+  "stateMutability": "view",
+  "type": "function"
+}]

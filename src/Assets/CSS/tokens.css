@@ -1,0 +1,123 @@
+/* body {
+    background-image: url('/images/swapback.png'); 
+    background-size: cover;
+    color: white;
+}
+
+Button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.tab-button{
+    background-color: rgba(56, 122, 223, 0.5) !important;
+    border: transparent;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    padding: 4px 4px;
+     border-radius: 99px;
+
+}
+
+.tab-button:hover {
+    background-color: #9b9797 !important;
+}
+
+.tokenimg {
+    height: 24px;
+    width: 24px;
+}
+
+th,
+tr,
+td {
+    border: 0 !important;
+}
+
+.badges {
+    background-color: #1b1b1b;
+    color: #9b9797;
+
+}
+
+.glassmorphism {
+    background-image: linear-gradient(180deg, rgba(217, 217, 217, 0.25) 0%, rgba(217, 217, 217, 0.25) 100%), linear-gradient(0deg, rgba(15, 39, 51, 0.7), rgba(15, 39, 51, 0.7)),
+        url('..//..//../public/images/132cs.png');
+}
+
+.nav {
+    background-color: transparent;
+}
+
+.tabcolor {
+    color: rgba(155, 151, 151, 1) !important;
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 0px;
+    text-align: left;
+    background-color: transparent !important;
+
+}
+
+.tabcolor:hover {
+    color: white !important;
+}
+
+.thead-background {
+    background: transparent;
+    color: rgba(155, 151, 151, 1) !important;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.d {
+    position: relative;
+    font-weight: 500;
+}
+
+.d-wrapper {
+    width: 37.74px;
+    border-radius: 93.41px;
+    background-color: #3b515a;
+    height: 37.74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 9.435096740722656px;
+    box-sizing: border-box;
+    color: #f1f1f1;
+}
+
+.w-wrapper {
+    width: 37.74px;
+    border-radius: 93.41px;
+    height: 37.74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 9.435096740722656px;
+    box-sizing: border-box;
+}
+
+.frame-parent {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 0px 6.6px;
+    text-align: left;
+    font-size: 18.87px;
+    color: #9b9797;
+    font-family: 'DM Sans';
+} */

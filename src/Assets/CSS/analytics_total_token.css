@@ -1,0 +1,94 @@
+/* .h-most-volume {
+    position: relative;
+}
+.cryptocurrency-colorusdc-icon {
+    width: 48px;
+    position: relative;
+    height: 48px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.wrapper {
+    width: 95px;
+    border-radius: 99px;
+    background-color: rgba(34, 157, 100, 0.25);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #26da87;
+}
+.parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0px 16px;
+    color: #9b9797;
+}
+.usdce-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+    justify-content: center;
+    gap: 4px 0px;
+    color: white;
+}
+.cryptocurrency-colorusdc-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0px 12px;
+    height: 24px;
+    width: 24px;
+}
+.cryptocurrency-coloreth-icon {
+    width: 48px;
+    position: relative;
+    height: 48px;
+}
+.parent-frame {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #f1f1f1;
+}
+.h-most-volume-parent {
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 28px 16px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: left;
+    font-size: 16px;
+    color: #696C80;
+    font-family: 'DM Sans';
+}
+
+
+.glassmorphism {
+    background-image: linear-gradient(180deg, rgba(217, 217, 217, 0.25) 0%, rgba(217, 217, 217, 0.25) 100%), linear-gradient(0deg, rgba(15, 39, 51, 0.7), rgba(15, 39, 51, 0.7)),
+        url('..//..//../public/images/132cs.png');
+        background-color: rgba(15, 39, 51, 0.9);
+        border-radius: 20px;
+        padding: 20px !important;
+}
+
+
+  
+ */
